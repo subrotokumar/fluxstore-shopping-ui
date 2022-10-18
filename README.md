@@ -11,12 +11,16 @@
 </p>
 
 
-<!-- ## Preview
+## Preview
 <p align="center">
-<img src="./assets/meta/ss2.jpg" height="500">
-<img src="./assets/meta/sss.jpg" width="30">
-<img src="./assets/meta/ss1.jpg" height="500">
-</p> -->
+<img src="./assets/images/ss4.png" height="500">
+<img src="./assets/images/sss.jpg" width="30">
+<img src="./assets/images/ss1.png" height="500">
+<img src="./assets/images/sss.jpg" width="30">
+<img src="./assets/images/ss2.png" height="500">
+<img src="./assets/images/sss.jpg" width="30">
+<img src="./assets/images/ss3.png" height="500">
+</p>
 
 ## Features
 - Clean and Stunning UI

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:fluxstore/widgets/features/shop_categories.dart';
 import 'package:fluxstore/widgets/features/shop_main_carousel.dart';
 
+import '../../widgets/features/shop_top_deal.dart';
+
 class Shop extends StatefulWidget {
   const Shop({super.key});
 
@@ -48,25 +50,7 @@ class _ShopState extends State<Shop> {
           ],
         ),
         const SizedBox(height: 10),
-        SizedBox(
-          height: MediaQuery.of(context).size.height - 400,
-          child: GridView.builder(
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              mainAxisSpacing: 20,
-              crossAxisSpacing: 20,
-              childAspectRatio: 5 / 4,
-            ),
-            itemCount: 8,
-            itemBuilder: (context, index) {
-              return Container(
-                decoration: const BoxDecoration(
-                  color: Color.fromARGB(255, 232, 232, 232),
-                ),
-              );
-            },
-          ),
-        ),
+        TopDealWidget(),
       ],
     );
   }

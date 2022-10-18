@@ -50,9 +50,12 @@ class _SearchState extends State<Search> {
           child: Consumer<ProductProvider>(
             builder: (context, value, child) {
               return true
-                  ? Lottie.network(
-                      'assets/lotties/shopping_cart.json',
-                      width: 200,
+                  ? Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Center(
+                        child:
+                            Lottie.asset('assets/lotties/loading_product.json'),
+                      ),
                     )
                   : ListView.builder(
                       itemBuilder: (context, index) {

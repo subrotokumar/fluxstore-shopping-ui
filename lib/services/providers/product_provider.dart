@@ -6,7 +6,7 @@ class ProductProvider with ChangeNotifier {
   List<Product> list = [];
   bool isLoading = false;
 
-  Future<void> data() async {
+  Future<void> getData() async {
     isLoading = true;
     notifyListeners();
     list = (await ProductAPI().getProduct());
