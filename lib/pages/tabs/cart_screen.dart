@@ -14,7 +14,15 @@ class Cart extends StatelessWidget {
             child: SizedBox(
               width: 130,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                    content: const Text('Cart is empty'),
+                    action: SnackBarAction(
+                      label: 'Remove',
+                      onPressed: () {},
+                    ),
+                  ));
+                },
                 child: Row(
                   children: const [
                     Icon(Icons.payment),

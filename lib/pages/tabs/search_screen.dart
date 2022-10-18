@@ -30,33 +30,41 @@ class _SearchState extends State<Search> {
           child: TextField(
             controller: controller,
             style: const TextStyle(color: Colors.black),
-            decoration: const InputDecoration(
-              border: OutlineInputBorder(
+            decoration: InputDecoration(
+              border: const OutlineInputBorder(
                 borderRadius: BorderRadius.all(Radius.circular(15)),
               ),
               labelText: 'Product',
               hintText: 'Search',
-              suffixIcon: Icon(Icons.arrow_forward_ios),
+              suffixIcon: IconButton(
+                icon: const Icon(Icons.arrow_forward_ios),
+                onPressed: () =>
+                    Provider.of<ProductProvider>(context, listen: false)
+                        .getData(),
+              ),
             ),
           ),
         ),
         const SizedBox(height: 10),
         Expanded(
-          child:
-              // Provider.of<ProductProvider>(context, listen: false).isLoading
-              true
-                  ? Center(
-                      child: Lottie.asset(
-                        'assets/lotties/splash_screen.json',
-                        height: 200,
-                      ),
+          child: Consumer<ProductProvider>(
+            builder: (context, value, child) {
+              return true
+                  ? Lottie.network(
+                      'assets/lotties/shopping_cart.json',
+                      width: 200,
                     )
                   : ListView.builder(
                       itemBuilder: (context, index) {
-                        return Container();
+                        print(value.list[index].title);
+                        return ListTile(
+                          title: Text(value.list[index].title),
+                        );
                       },
-                      itemCount: 0,
-                    ),
+                      itemCount: value.list.length,
+                    );
+            },
+          ),
         ),
       ],
     );
