@@ -1,16 +1,49 @@
-# fluxstore
+<p align="center">
+<img height="80px" src="./assets/icons/ic_launcher_icon.png">
+<h1 align="center"> Fluxstore </h1>
+<h3 align="center"> Top destination for all for online shopping needs.</h3>
 
-A new Flutter project.
+<br>
+<p align="center">
+<a href="https://github.com/subrotokumar/fluxstore-shopping-ui/releases"> <img width="100px" src="https://github.com/subrotokumar/marvel-go/raw/main/assets/meta/download.png"> </a>
+<br>
+<a href="https://github.com/subrotokumar/fluxstore-shopping-ui" alt="GitHub release"><img width="80px" src="https://img.shields.io/badge/version-0.1.0-blue.svg" ></a>
+</p>
+
+
+<!-- ## Preview
+<p align="center">
+<img src="./assets/meta/ss2.jpg" height="500">
+<img src="./assets/meta/sss.jpg" width="30">
+<img src="./assets/meta/ss1.jpg" height="500">
+</p> -->
+
+## Features
+- Clean and Stunning UI
+- Sharing option: Allow you to share info via the platform sharing UI
+- Available for both Android and IOS
+## Technology Used
+- Programming Language: **Dart**
+- UI Framework: **Flutter**
+    
+## Created By 
+Auther: [Subroto Kumar](https://bio.link/subroto)
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+You can build and run this by following these steps:
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+git clone https://github.com/subrotokumar/fluxstore-shopping-ui.git
+cd fluxstore-shopping-ui
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Contribution
+Your ideas, translations, design changes, code cleaning, or real heavy code changes or any help is always welcome. The more is contribution the better it gets
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[Pull requests](https://github.com/fluxstore-shopping-ui/pulls) will be reviewed
+<!--
+#### Known issues and limitations
+-->
+<h3 align="center">**Star :star:  this repo to show your support and it really does matter!** :clap:</h4>
